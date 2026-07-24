@@ -8,10 +8,23 @@
 import SwiftUI
 
 @main
-struct WaterIntakeTracker_Watch_AppApp: App {
+struct WaterIntakeTrackerApp: App {
+    @StateObject private var store = WaterDataStore()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if store.hasCompletedOnboarding {
+                    ContentView()
+                } else {
+                    GoalSetupView()
+                }
+            }
+            .environmentObject(store)
+            .onAppear {
+                NotificationManager.shared.requestAuthorization()
+                NotificationManager.shared.scheduleDailyReminder()
+            }
         }
     }
 }
