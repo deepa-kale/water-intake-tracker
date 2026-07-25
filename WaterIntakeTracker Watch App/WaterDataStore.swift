@@ -95,7 +95,7 @@ class WaterDataStore: ObservableObject {
         return result
     }
 
-    // MARK: - Persistence
+    // MARK: - Saving
 
     private func saveEntries() {
         if let data = try? JSONEncoder().encode(entries) {

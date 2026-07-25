@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var store: WaterDataStore
 
-    // Quick-log buttons. Feel free to change these amounts.
+    // Quick-log buttons.  
     let quickAmounts = [8, 12, 16]
 
     var body: some View {

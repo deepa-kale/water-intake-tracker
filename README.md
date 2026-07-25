@@ -32,6 +32,10 @@ The app follows a simple MVVM-style structure:
 - `HistoryView` — read-only 7-day history list
 - `NotificationManager` — handles permission requests and scheduling the daily reminder
 
+## Test Plan
+See [WaterIntakeTracker_TestPlan.pdf](WaterIntakeTracker_TestPlan.pdf) for the full set of test cases covering onboarding, functional behavior, persistence, edge cases, and notifications.
+
+
 ## Setup
 
 1. Clone this repo
