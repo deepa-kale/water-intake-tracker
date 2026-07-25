@@ -12,6 +12,19 @@ A standalone watchOS app built in SwiftUI that helps users track daily water int
 - **Daily reminder notifications** — a local notification nudges the user if they haven't logged water
 - **Fully offline** — all data is stored locally on-device; no network or account required
 
+## Screenshots
+### Goal Setup
+![Goal setup - step 1](Screenshots/goal-setup-1.png)
+![Goal setup - step 2](Screenshots/goal-setup-2.png)
+
+### Editing Your Goal
+![Edit daily goal](Screenshots/goal-edit.png)
+
+### History
+![Water intake history](Screenshots/History.png)
+
+### Notifications
+![Hydration reminder notification](Screenshots/Notification.png)
 
 ## Tech Stack
 
